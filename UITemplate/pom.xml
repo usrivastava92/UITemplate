@@ -19,6 +19,26 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jdk14</artifactId>
+			<version>1.7.25</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.13</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.13</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.github.jai-imageio/jai-imageio-core -->
 		<dependency>
 			<groupId>com.github.jai-imageio</groupId>
