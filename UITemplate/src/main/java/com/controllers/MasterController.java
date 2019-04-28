@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +16,9 @@ import com.formBeans.MenuList;
 @Controller
 @RequestMapping(value = "/")
 public class MasterController {
+	
+	@Value("${log4j.rootLogger}")
+	String string;
 	
 	private static final Logger BaseLogger = LoggerFactory.getLogger(MasterController.class);
 
@@ -37,7 +41,7 @@ public class MasterController {
 		fruitMenuItem.add("Melons");
 		menuList.getMenuItemMap().put("Vegetables", vegetableMenuItem);
 		menuList.getMenuItemMap().put("Fruits", fruitMenuItem);
-		BaseLogger.info("in controller");
+		BaseLogger.info("in controller"+string);
 		return new ModelAndView("index", "menuList", menuList);
 	}
 

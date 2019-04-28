@@ -19,7 +19,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	<task:annotation-driven />
 	
 	<context:property-placeholder
-		location="classpath:log4j-config.properties" />
+		location="WEB-INF/properties/log4j-config.properties" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
