@@ -20,7 +20,7 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${menuList.brandName}</title>
+<title>${indexPage.brandName}</title>
 <meta name="description"
 	content="Blueprint: A basic template for a responsive multi-level menu" />
 <meta name="keywords"
@@ -41,10 +41,10 @@
 				<h2 class="dummy-heading">Menu Items</h2>
 			</div>
 			<div class="bp-header__main">
-				<span class="bp-header__present">${menuList.brandName}<span
+				<span class="bp-header__present">${indexPage.brandName}<span
 					class="bp-tooltip bp-icon bp-icon--about"
-					data-content="${menuList.brandDescription}"></span></span>
-				<h1 class="bp-header__title">${menuList.pageTitle}</h1>
+					data-content="${indexPage.brandDescription}"></span></span>
+				<h1 class="bp-header__title">${indexPage.pageTitle}</h1>
 				<nav class="bp-nav">
 					<a class="bp-nav__item bp-icon bp-icon--prev" href="#"
 						data-info="previous Blueprint"><span>Previous Blueprint</span></a>
@@ -70,7 +70,7 @@
 				<ul data-menu="main" class="menu__level" tabindex="-1" role="menu"
 					aria-label="All">
 					<c:set var="mainCounter" value="1" />
-					<c:forEach items="${menuList.menuItemMap}" var="menuItemMap">
+					<c:forEach items="${indexPage.menuItemMap}" var="menuItemMap">
 						<li class="menu__item" role="menuitem"><a class="menu__link"
 							data-submenu="submenu-${mainCounter}"
 							aria-owns="submenu-${mainCounter}" href="#"> <c:out
@@ -80,7 +80,7 @@
 				</ul>
 
 				<c:set var="mainCounter" value="1" />
-				<c:forEach items="${menuList.menuItemMap}" var="menuItemMap">
+				<c:forEach items="${indexPage.menuItemMap}" var="menuItemMap">
 					<ul data-menu="submenu-${mainCounter}" id="submenu-${mainCounter}"
 						class="menu__level" tabindex="-1" role="menu"
 						aria-label="${menuItemMap.key}">

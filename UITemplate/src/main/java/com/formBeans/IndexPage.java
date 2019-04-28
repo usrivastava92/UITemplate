@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.inject.Named;
 
 @Named("menuList")
-public class MenuList {
+public class IndexPage {
 	private Map<String, List<String>> menuItemMap = new HashMap<>();
 	private String brandName = "";
 	private String brandDescription = "";
