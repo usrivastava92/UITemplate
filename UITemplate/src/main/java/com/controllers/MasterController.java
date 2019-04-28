@@ -17,9 +17,9 @@ public class MasterController {
 	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView toIndex() {
 		MenuList menuList = new MenuList();
-		menuList.setBrandName("BRAND NAME");
+		menuList.setBrandName("NAMRATA");
 		menuList.setBrandDescription("Write description of brand name here..");
-		menuList.setPageTitle("Page Title");
+		menuList.setPageTitle("I LOVE YOU!!");
 		List<String> vegetableMenuItem = new ArrayList<>();
 		vegetableMenuItem.add("Stalk Vegetables");
 		vegetableMenuItem.add("Roots & Seeds");
